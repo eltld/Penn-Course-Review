@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.upenn.pcr"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="11" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application android:label="@string/app_name"
+        android:icon="@drawable/logo"
+        android:theme="@style/AppTheme">
+        <activity android:launchMode="standard" android:name=".activity.MainActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.SearchActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.SettingsActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.HelpActivity" android:screenOrientation="portrait" android:launchMode="standard"></activity>
+        <activity android:name=".activitygroup.SearchActivityGroup" android:screenOrientation="portrait" android:launchMode="standard"></activity>
+        <activity android:name=".activitygroup.SettingsActivityGroup" android:screenOrientation="portrait" android:launchMode="standard"></activity>
+        <activity android:screenOrientation="portrait" android:launchMode="standard" android:name=".activitygroup.CategoryActivityGroup"></activity>
+        <activity android:screenOrientation="portrait" android:launchMode="standard" android:name=".activity.CategoryActivity"></activity>
+        <activity android:name=".activity.DepartmentsActivity" android:screenOrientation="portrait" android:launchMode="standard"></activity>
+        <activity android:launchMode="standard" android:screenOrientation="portrait" android:name=".activity.StorageSettingActivity"></activity>
+        <activity android:launchMode="standard" android:screenOrientation="portrait" android:name=".activity.DisplaySettingActivity"></activity>
+        <activity android:name=".activity.InstructorsActivity" android:screenOrientation="portrait" android:launchMode="standard"></activity>
+        <activity android:name=".activity.CoursesActivity" android:screenOrientation="portrait" android:launchMode="standard"></activity>
+        <activity android:name=".activity.SectionByInstrActivity" android:screenOrientation="portrait" android:launchMode="standard"></activity>
+        <activity android:launchMode="standard" android:name=".activity.SectionByCourseActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.CourseSectionActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.LoginActivity" android:screenOrientation="portrait" android:launchMode="standard">
+        	<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.RecentActivity" android:launchMode="standard" android:screenOrientation="portrait"></activity>
+
+    </application>
+
+</manifest>
