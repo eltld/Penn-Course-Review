@@ -1,0 +1,25 @@
+rCourseQuality:0:0:CourseQuality:Course Quality:Course quality:Overall quality of the course
+rInstructorQuality:1:1:Instructor Quality:Instr Quality:Instructor quality:Overall quality of the instructor 
+rDifficulty:2:2:Difficulty:Difficulty:Difficulty:Difficulty of the course 
+rCommAbility:3:3:Communication Ability:Comm Ability:Communication ability:Instructor's ability to communicate the subject matter
+rInstructorAccess:4:4:Instructor Access:Instr Access:Instructor access:Instructor's accessibility and willingness to to discuss course content and any problems
+rReadingsValue:5:5:Readings Value:Readings Value:Readings value:Value of assigned readings 
+rAmountLearned:6:6:Amount Leaned:Amount Learned:Amount learned:Amount learned from this course in terms of knowledge, concepts, skills and thinking ability
+rWorkRequired:7:7:Work Required:Work Required:Work required:The amount of work required for this course
+rRecommendMajor:8:8:Recommend Major:Rec Major:Recommend major:Extent this course is recommended to a major
+rRecommendNonMajor:9:9:Recommend Non Major:Rec Non Major:Recommend non-major:Extent this course is recommended to a non-major
+rStimulateInterest:10:10:Stimulate Interest:Stim Interest:Stimulate interest:Extent the instructor was able to stimulate your interest
+rArticulateGoals:11:11:Articulate Goals:Articulate Goals:Articulate goals:Extent the goals of the course were clearly articulated
+rSkillEmphasis:12:12:Skill Emphasis:Skill Emphasis:Skill emphasis:Appropriateness of the emphasis placed on the language skills
+rHomeworkValuable:13:13:Homework Value:Homework Value:Homework value:Value of homework exercises in terms of reinforcement of classroom work
+rExamsConsistent:14:14:Exams Consistent:Exams Consistent:Exams consistent:Conststency of the exams with assignments, materials, and method of instruction
+rAbilitiesChallenged:15:15:Abilities Challenged:Abilities challenged:Abilities:Extent your linguistic abilities in reading, writing, speaking, and listening were challenged
+rClassPace:16:16:Class Pace:Class Pace:Class pace:The pace of the course
+rOralSkills:17:17:Oral Skills:Oral Skills:Oral skills:Extent the instructor organized appropriate activities in class to encourage the use of oral skills
+rInstructorConcern:18:18:Instructor Concern:Instr Concern:Instructor concern:Extent the instructor concerned that students learn the materials
+rInstructorRapport:19:19:Instructor Rapport:Instr Rapport:Instructor rapport:The rapport between the class and the instructor
+rInstructorAttitude:20:20:Instructor Attitude:Instr Attitude:Instructor attitude:The instructor's attitude towards the course
+rInstructorEffective:21:21:Instructor Effective:Instr Effective:Instructor effective:The instructor's effectiveness in presenting and explaining course materials
+rGradeFairness:22:22:Grade Fairness:Grade Fairness:Grade fairness:The fairness of the grading process in the course
+rNativeAbility:23:23:Native Ability:Native Ability:Native ability:Extent the skills learned in this course would help you survive in a native environment
+rTAQuality:24:24:TA Quality:TA Quality: TA quality:The overall quality of the teaching assistant/drill instructor in the course

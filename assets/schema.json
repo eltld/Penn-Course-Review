@@ -1,0 +1,338 @@
+{
+  "tables": [
+    {
+      "name": "Department",
+      "class": "edu.upenn.pcr.model.db.entity.Department",
+      "columns": [
+        {
+          "name": "dept_id",
+          "attribute": "NOT NULL PRIMARY KEY",
+          "type": "TEXT",
+          "bindField": "id",
+          "bindType": "String"
+        },
+        {
+          "name": "dept_name",
+          "attribute": "NOT NULL",
+          "type": "TEXT",
+          "bindField": "name",
+          "bindType": "String"
+        },
+        {
+          "name": "dept_viewd",
+          "attribute": "NOT NULL",
+          "bindField": "viewed",
+          "bindType": "Integer",
+          "type": "INTEGER"
+        }
+      ]
+    },
+    {
+      "name": "Instructor",
+      "class": "edu.upenn.pcr.model.db.entity.Instructor",
+      "columns": [
+        {
+          "name": "instr_id",
+          "attribute": "NOT NULL PRIMARY KEY",
+          "type": "TEXT",
+          "bindField": "id",
+          "bindType": "String"
+        },
+        {
+          "name": "instr_lastName",
+          "attribute": "NOT NULL",
+          "type": "TEXT",
+          "bindField": "lastName",
+          "bindType": "String"
+        },
+        {
+          "name": "instr_firstName",
+          "attribute": "NOT NULL",
+          "type": "TEXT",
+          "bindField": "firstName",
+          "bindType": "String"
+        },
+        {
+          "name": "instr_viewed",
+          "attribute": "NOT NULL",
+          "bindField": "viewed",
+          "bindType": "Integer",
+          "type": "INTEGER"
+        }
+      ]
+    },
+    {
+      "name": "Course",
+      "class": "edu.upenn.pcr.model.db.entity.Course",
+      "columns": [
+        {
+          "name": "course_id",
+          "attribute": "NOT NULL PRIMARY KEY",
+          "type": "TEXT",
+          "bindField": "id",
+          "bindType": "String"
+        },
+        {
+          "name": "course_name",
+          "attribute": "NOT NULL",
+          "type": "TEXT",
+          "bindField": "name",
+          "bindType": "String"
+        },
+        {
+          "name": "course_viewed",
+          "attribute": "NOT NULL",
+          "bindField": "viewed",
+          "bindType": "Integer",
+          "type": "INTEGER"
+        }
+      ]
+    },
+    {
+      "name": "CourseCode",
+      "class": "edu.upenn.pcr.model.db.entity.CourseCode",
+      "columns": [
+        {
+          "name": "cc_code",
+          "attribute": "NOT NULL PRIMARY KEY",
+          "type": "TEXT",
+          "bindField": "id",
+          "bindType": "String"
+        },
+        {
+          "name": "cc_courseId",
+          "attribute": "NOT NULL",
+          "type": "TEXT",
+          "bindField": "course",
+          "bindType": "edu.upenn.pcr.model.db.entity.Course"
+        },
+        {
+          "name": "cc_deptId",
+          "attribute": "NOT NULL",
+          "bindField": "dept",
+          "bindType": "edu.upenn.pcr.model.db.entity.Department",
+          "type": "TEXT"
+        }
+      ]
+    },
+    {
+      "name": "CourseDetail",
+      "class": "edu.upenn.pcr.model.db.entity.CourseDetail",
+      "columns": [
+        {
+          "name": "cd_id",
+          "attribute": "NOT NULL PRIMARY KEY",
+          "type": "TEXT",
+          "bindField": "id",
+          "bindType": "String"
+        },
+        {
+          "name": "cd_courseId",
+          "attribute": "NOT NULL",
+          "type": "TEXT",
+          "bindField": "course",
+          "bindType": "edu.upenn.pcr.model.db.entity.Course"
+        },
+        {
+          "name": "cd_semesterId",
+          "attribute": "NOT NULL",
+          "bindField": "semester",
+          "bindType": "edu.upenn.pcr.model.db.entity.Semester",
+          "type": "TEXT"
+        },
+        {
+          "name": "cd_description",
+          "attribute": "NOT NULL",
+          "bindField": "description",
+          "bindType": "String",
+          "type": "TEXT"
+        }
+      ]
+    },
+    {
+      "name": "CourseSection",
+      "class": "edu.upenn.pcr.model.db.entity.CourseSection",
+      "columns": [
+        {
+          "name": "cs_id",
+          "attribute": "NOT NULL PRIMARY KEY AUTOINCREMENT",
+          "type": "INTEGER",
+          "bindField": "id",
+          "bindType": "Integer"
+        },
+        {
+          "name": "cs_courseDetailId",
+          "attribute": "NOT NULL",
+          "type": "TEXT",
+          "bindField": "courseDetail",
+          "bindType": "edu.upenn.pcr.model.db.entity.CourseDetail"
+        },
+        {
+          "name": "cs_section",
+          "attribute": "NOT NULL",
+          "type": "TEXT",
+          "bindField": "section",
+          "bindType": "String"
+        },
+        {
+          "name": "cs_instrId",
+          "attribute": "NOT NULL",
+          "type": "TEXT",
+          "bindField": "instructor",
+          "bindType": "edu.upenn.pcr.model.db.entity.Instructor"
+        },
+        {
+          "name": "cs_amountLearned",
+          "attribute": "NOT NULL",
+          "type": "REAL",
+          "bindField": "amountLearned",
+          "bindType": "Double"
+        },
+        {
+          "name": "cs_commAbility",
+          "attribute": "NOT NULL",
+          "type": "REAL",
+          "bindField": "commAbility",
+          "bindType": "Double"
+        },
+        {
+          "name": "cs_courseQuality",
+          "attribute": "NOT NULL",
+          "type": "REAL",
+          "bindField": "courseQuality",
+          "bindType": "Double"
+        },
+        {
+          "name": "cs_difficulty",
+          "attribute": "NOT NULL",
+          "type": "REAL",
+          "bindField": "difficulty",
+          "bindType": "Double"
+        },
+        {
+          "name": "cs_instructorAccess",
+          "attribute": "NOT NULL",
+          "type": "REAL",
+          "bindField": "instructorAccess",
+          "bindType": "Double"
+        },
+        {
+          "name": "cs_instructorQuality",
+          "attribute": "NOT NULL",
+          "type": "REAL",
+          "bindField": "instructorQuality",
+          "bindType": "Double"
+        },
+        {
+          "name": "cs_readingsValue",
+          "attribute": "NOT NULL",
+          "type": "REAL",
+          "bindField": "readingsValue",
+          "bindType": "Double"
+        },
+        {
+          "name": "cs_recommendMajor",
+          "attribute": "NOT NULL",
+          "type": "REAL",
+          "bindField": "recommendMajor",
+          "bindType": "Double"
+        },
+        {
+          "name": "cs_recommendNonMajor",
+          "attribute": "NOT NULL",
+          "type": "REAL",
+          "bindField": "recommendNonMajor",
+          "bindType": "Double"
+        },
+        {
+          "name": "cs_stimulateInterest",
+          "attribute": "NOT NULL",
+          "type": "REAL",
+          "bindField": "stimulateInterest",
+          "bindType": "Double"
+        },
+        {
+          "name": "cs_workRequired",
+          "attribute": "NOT NULL",
+          "type": "REAL",
+          "bindField": "workRequired",
+          "bindType": "Double"
+        }
+      ]
+    },
+    {
+      "name": "InvertedIndex",
+      "class": "edu.upenn.pcr.model.db.entity.InvertedIndex",
+      "columns": [
+        {
+          "name": "ii_keyword",
+          "attribute": "NOT NULL PRIMARY KEY",
+          "type": "TEXT",
+          "bindField": "keyword",
+          "bindType": "String"
+        },
+        {
+          "name": "ii_type",
+          "attribute": "NOT NULL",
+          "type": "TEXT",
+          "bindField": "type",
+          "bindType": "String"
+        },
+        {
+          "name": "ii_refId",
+          "attribute": "NOT NULL",
+          "bindField": "viewed",
+          "bindType": "Integer",
+          "type": "TEXT"
+        }
+      ]
+    },
+    {
+      "name": "Recent",
+      "class": "edu.upenn.pcr.model.db.entity.Recent",
+      "columns": [
+        {
+          "name": "recent_term",
+          "attribute": "NOT NULL PRIMARY KEY",
+          "type": "TEXT",
+          "bindField": "term",
+          "bindType": "String"
+        }
+      ]
+    },
+    {
+      "name": "Semester",
+      "class": "edu.upenn.pcr.model.db.entity.Semester",
+      "columns": [
+        {
+          "name": "semester_id",
+          "attribute": "NOT NULL PRIMARY KEY",
+          "type": "TEXT",
+          "bindField": "id",
+          "bindType": "String"
+        },
+        {
+          "name": "semester_name",
+          "attribute": "NOT NULL",
+          "type": "TEXT",
+          "bindField": "name",
+          "bindType": "String"
+        }
+      ]
+    }
+  ],
+  "indices": [
+    {
+      "id": "cc_deptId",
+      "on": "CourseCode(cc_deptId)"
+    },
+    {
+      "id": "courseSection_instrId",
+      "on": "CourseSection(cs_instrId)"
+    },
+    {
+      "id": "instructor_name",
+      "on": "Instructor(instr_lastName, instr_firstName)"
+    }
+  ]
+}
